@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_05_094744) do
+ActiveRecord::Schema.define(version: 2021_09_11_185408) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -49,6 +49,23 @@ ActiveRecord::Schema.define(version: 2021_09_05_094744) do
     t.string "key"
     t.string "value"
     t.string "desc"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "stock_market_instruments", force: :cascade do |t|
+    t.string "instrument_token"
+    t.string "exchange_token"
+    t.string "tradingsymbol"
+    t.string "name"
+    t.string "last_price"
+    t.string "expiry"
+    t.string "strike"
+    t.string "tick_size"
+    t.string "lot_size"
+    t.string "instrument_type"
+    t.string "segment"
+    t.string "exchange"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

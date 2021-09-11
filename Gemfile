@@ -27,8 +27,8 @@ group :development do
     gem 'listen', '~> 3.3'
     gem 'spring'
     gem 'better_errors'
-    gem 'annotate'
     gem 'binding_of_caller'
+    gem 'annotate'
 end
 group :development do
   gem  'pg'
@@ -41,3 +41,4 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'httparty'
