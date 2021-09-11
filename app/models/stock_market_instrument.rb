@@ -29,3 +29,4 @@ class StockMarketInstrument < ApplicationRecord
 
 	end	
 end
+	
