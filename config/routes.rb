@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :sensors
   get '/' => "static#home"
+  get '/check' => "static#check"
   get 'static/test'
   resources :bookmarks
   devise_for :admin_users, ActiveAdmin::Devise.config

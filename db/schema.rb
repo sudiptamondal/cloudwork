@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_11_185408) do
+ActiveRecord::Schema.define(version: 2021_10_23_040453) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -45,10 +45,24 @@ ActiveRecord::Schema.define(version: 2021_09_11_185408) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "logs", force: :cascade do |t|
+    t.string "level"
+    t.string "text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "properties", force: :cascade do |t|
     t.string "key"
     t.string "value"
     t.string "desc"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "sensors", force: :cascade do |t|
+    t.string "device"
+    t.string "temperature"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
