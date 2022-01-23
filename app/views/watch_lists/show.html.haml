@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @watch_list.title
+%p
+  %b Type:
+  = @watch_list.type
+%p
+  %b Have it:
+  = @watch_list.have_it
+
+= link_to 'Edit', edit_watch_list_path(@watch_list)
+\|
+= link_to 'Back', watch_lists_path
