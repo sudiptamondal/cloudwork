@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :watch_lists
   get '/dashboard' => 'dashboard#index'
   namespace :api do
     namespace :v1 do
