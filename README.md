@@ -5,3 +5,4 @@
 3. Price hunt
 4. Money Stats
 5. Bookmark
+6. Watch list
