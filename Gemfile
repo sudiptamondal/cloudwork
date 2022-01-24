@@ -18,7 +18,7 @@ gem 'rufus-scheduler'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
-    gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
@@ -36,14 +36,14 @@ group :production do
 end
 
 group :test do
-    gem 'capybara', '>= 3.26'
+  gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
-    gem 'webdrivers'
+  gem 'webdrivers'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'httparty'
-gem 'google-cloud-firestore'
+# gem 'google-cloud-firestore'
 
 gem 'capistrano'
 gem 'capistrano-rails'
