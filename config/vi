@@ -1,0 +1,4 @@
+RDS_DB_NAME=cloudwork
+RDS_USERNAME=deploy
+RDS_PASSWORD=Fairy5tail#
+RDS_HOSTNAME=127.0.0.1

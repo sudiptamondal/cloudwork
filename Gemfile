@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '3.1.0'
 
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 
@@ -44,3 +44,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'httparty'
 gem 'google-cloud-firestore'
+
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-passenger'
